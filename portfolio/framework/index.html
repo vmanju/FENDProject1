@@ -7,6 +7,8 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css"> 
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
   <body>
     <div class="container">
@@ -34,19 +36,73 @@
     </div>
     <div class="row text-center" >
       <div class="col-md-4">
-        <img class="img-responsive" src="http://placekitten.com/380/200" alt="about me pic">
+        <img class="img-responsive" src="http://placekitten.com/380/200" alt="about me pic" data-toggle="modal" data-target="#project1">
         <h3 class="text-uppercase">About Me</h3>
         <p><a href="https://github.com/vmanju/FENDProject0">https://github.com/vmanju/FENDProject0</a></p>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive" src="http://placekitten.com/380/200" alt="portfolio site pic">
+        <img class="img-responsive" src="http://placekitten.com/380/200" alt="portfolio site pic" data-toggle="modal" data-target="#project2">
         <h3 class="text-uppercase">Portfolio Site</h3>
         <p><a href="https://github.com/vmanju/FENDProject1">https://github.com/vmanju/FENDProject1</a></p>
       </div>
       <div class="col-md-4">
-        <img class="img-responsive" src="http://placekitten.com/380/200" alt="online resume pic">
+        <img class="img-responsive" src="http://placekitten.com/380/200" alt="online resume pic" data-toggle="modal" data-target="#project3">
         <h3 class="text-uppercase">Online Resume</h3>
         <p><a href="https://github.com/vmanju/FENDProject2">https://github.com/vmanju/FENDProject2</a></p>
       </div>
     </div>
-</div></body></html>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">About Me</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/380/200">
+          This was my first project in this class. I learned the basics of HTML and CSS.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Portfolio Site</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/380/200">
+          This was my second project in this class. I built a portfolio page and learned a lot of techniques doing this: how to put together a basic landing page using
+          CSS frameworks like Bootstrap, how to make images on the site responsive, and finally how to implement the html/css for a given mockup.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Online Resume</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://placekitten.com/380/200">
+          This will be my third project in this class. I am looking forward to learning Javascript and build an interactive resume site.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body></html>
